@@ -1,0 +1,110 @@
+/* Page Title Style */
+#page__title{
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+.page__title__text{
+    font-size: 2.2rem;
+    color: var(--black-1);
+
+}
+@media only screen and (min-width: 768px){
+    #page__title{
+        padding-top: 5rem;
+        padding-bottom: 3rem;
+    }
+    .page__title__text{
+        font-size: 3.6rem;
+    }
+}
+/* Our Special Styles */
+#ourSpecial{
+    padding: 0;
+}
+.ourSpecial__title{
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: var(--black-1);
+}
+.ourSpecial__wrapper{
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+    max-width: 400px;
+}   
+.ourSpecial__item{
+    flex: 1;
+    display: flex;
+    background-color: var(--lightGreen-1);
+    gap: 2rem;
+    padding: 1.5rem;
+    border-radius: 12px;
+
+}
+.ourSpecial__item__img,
+.ourSpecial__item__info
+{
+    flex: 1;
+}
+.ourSpecial__item__img{
+    border-radius: 12px;
+    overflow: hidden;
+}
+.ourSpecial__item__img img{
+    object-fit: cover;
+}
+.ourSpecial__item__info{
+    flex: 2;
+}
+.ourSpecial__item__title{
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: var(--black-1);
+    line-height: 1.2em;
+}
+.ourSpecial__item__price{
+    font-size: 1.8rem;
+    color: var(--green-1);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.ourSpecial__item__stars{
+    width: max-content;
+}
+@media only screen and (min-width: 768px){
+    .ourSpecial__title{
+        font-size: 2.4rem;
+    }
+    .ourSpecial__wrapper{
+        flex-direction: row;
+        gap: 2rem;
+        max-width: none;
+    }
+    .ourSpecial__item{
+        padding: 3rem;
+        gap: 2rem;
+    }
+    .ourSpecial__item__title{
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+    }
+    .ourSpecial__item__price{
+        font-size: 2.4rem;
+        margin-bottom: 1.5rem;
+    }
+}
+@media only screen and (min-width: 1100px){
+    .ourSpecial__item__img{
+        flex: 4;
+    }
+    .ourSpecial__item__info{
+        flex: 3;
+    }
+}
+/* Top dish css */
+#dishGrid,
+#breakfast,
+#lunch{
+    padding-bottom: 0;
+}
